@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My HTML Project</title>
+    <style>
+      /* navbar styles */
+      .navbar {
+        position: fixed;
+        width: 100vw;
+        top: 0px;
+        left: 0px;
+      }
+        .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        height: 55px;
+        color:white;
+        background-color: black;
+        padding: 0 20px;
+      }
+      .links ul{
+        display: flex;
+        gap: 31px;
+        list-style: none;
+      }
+      a{
+        text-decoration: solid;
+        color: white;
+      }
+      /* flexbox styles */
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .flex-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .flex-right img {
+        padding: 50px;
+        width: 500px;
+      }
+      .flex-right p {
+        font-size: 18px;
+      }
+
+      /* image flexbox styles */
+      .image-flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .image-flex-container img {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="nav">
+        <div class="logo">
+        <a href="">Company Name</a>
+        </div>
+            <div class="links"> 
+             <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Mobile App</a></li>
+                <li><a href="">Contact Us</a></li>
+             </ul>
+           </div>
+      </div>
+    </nav>
+    <br>
+    <!-- flexbox with info on the left and image on the right -->
+    <div class="flex-container">
+      <div class="flex-left">
+        <h2>Title</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+            but also the leap into electronic typesetting
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+      <div class="flex-right">
+        <img src="https://source.unsplash.com/featured?technology" alt="Placeholder image">
+        <p>Source Unplash</p>
+      </div>
+    </div>
+
+    <!-- flexbox of images -->
+    <h2>FLEXBOX IMAGE</h2>
+    <div class="image-flex-container">
+      <img src="https://source.unsplash.com/featured?animals" alt="Placeholder image">
+      <img src="https://source.unsplash.com/featured?cars" alt="Placeholder image">
+      <img src="https://source.unsplash.com/featured?girls" alt="Placeholder image">
+      </div>
+      <div class="image-flex-container">
+        <img src="https://source.unsplash.com/featured?dogs" alt="Placeholder image">
+        <img src="https://source.unsplash.com/featured?cats" alt="Placeholder image">
+        <img src="https://source.unsplash.com/featured?bikes" alt="Placeholder image">
+        </div>
+      </body>
+    </html>
